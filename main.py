@@ -3,7 +3,7 @@ import pandas as pd
 import time
 
 
-query = "#ขายรหัส"
+query = "ขายรหัส"
 tweets = []
 # tweets = []
 limit = 5000
