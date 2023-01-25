@@ -8,8 +8,12 @@ tweets = []
 # tweets = []
 limit = 5000
 delay = 30
+out_path = "./data/tweets.csv"
+
+
+
 try:
-    data = pd.read_csv("tweets.csv")
+    data = pd.read_csv(out_path)
     for tw in data.to_numpy():
         tweets.append([tw[1], tw[2], tw[3]])
         # print(type(tw[1]))
@@ -51,7 +55,7 @@ while True:
 
             df = pd.DataFrame(tweets, columns=['Date', 'User', 'Tweet'])
             print("save file!!!", end="\n")
-            df.to_csv('tweets.csv')
+            df.to_csv(out_path)
         
     
     print("delay: ", delay)
