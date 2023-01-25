@@ -15,7 +15,7 @@ out_path = "./data/tweets.csv"
 try:
     data = pd.read_csv(out_path)
     for tw in data.to_numpy():
-        tweets.append([tw[1], tw[2], tw[3]])
+        tweets.append(tw)
         # print(type(tw[1]))
 except FileNotFoundError:
     print('not found tweets.csv')
