@@ -36,7 +36,7 @@ while True:
         else:
             for i in range(len(tweets)):
                 # print(tweets[i][0], tweet.date)
-                if(tweets[i][0] == tweet.date and tweets[i][1] == tweet.username and tweets[i][2] == tweet.content):
+                if(tweets[i][1] == tweet.username and tweets[i][2] == tweet.content):
                     print("skip eiei\n\n")
                     break
                 else:
