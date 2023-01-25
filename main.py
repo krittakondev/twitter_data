@@ -7,7 +7,7 @@ query = "#ขายรหัส"
 tweets = []
 # tweets = []
 limit = 5000
-delay = 30
+delay = 60 #sec
 out_path = "./data/tweets.csv"
 
 
