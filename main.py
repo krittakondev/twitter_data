@@ -55,7 +55,7 @@ while True:
 
             df = pd.DataFrame(tweets, columns=['Date', 'User', 'Tweet'])
             print("save file!!!", end="\n")
-            df.to_csv(out_path)
+            df.to_csv(out_path, index=False)
         
     
     print("delay: ", delay)
